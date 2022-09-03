@@ -4,14 +4,53 @@ body {
     font-size: 20px;
 }
 
+div {display: flex;
+height: auto;
+justify-content: space-around;
+flex-wrap: wrap;
+flex-direction: row;
+border: red;
+}
+.recipe {display: flex;
+justify-content: stretch;
+flex-direction: row;
+width: auto;
+border: yellow;
+flex: initial;
+margin-bottom: 20px;
+}
+
+.h-ingredients {display: flex;
+    width: fit-content;
+    height: min-content;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    position: static;
+    border: 10px blue;
+    flex-wrap: wrap;
+}
+
+.h-method{display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    flex: 3;
+    border: green;
+    flex-wrap: wrap;
+   height: min-content;
+   margin-left: 100px;
+}
 h1{
     text-align: center; font-weight: bold;
     font-size: 36px; color: aquamarine;
+    margin-top: 50px;
 }
 
 h2 {
     color: darkkhaki;
     font-size: 30px;
+    margin-bottom: 20px;
+    align-content: center;
 }
 
 h3 {
@@ -36,3 +75,26 @@ ul {
 ol {
     list-style-position: inside;
 }
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+  }
+  
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
